@@ -1,0 +1,54 @@
+.container {
+  width:900px;
+  margin:0 auto;
+}
+.slideshow {
+  font-size:10px;
+}
+.slideshow__title {
+  font-size:3em;
+  font-family: Helvetica, sans-serif;
+  font-weight:bold;
+  margin-bottom: 1em;
+}
+
+.slideshow__slide {
+  display: block;
+  box-shadow: 0px 0px 15px #656565;
+  margin: 0 auto;
+  width:800px;
+/* 
+ici nous assumons que la hauteur et la largeur du slideshow sont connus (800*600) et que la largeur du container de slide est connu (900px)
+sinon alors il faut faire des calculs en JavaScript 
+*/
+  height: calc((600px * 900) / 800);
+}
+
+.slideshow__hud {
+  height:50px;
+  font-size:2em;
+  display: flex;
+  align-items: center;
+}
+
+.slideshow__hud__index {
+  flex-grow:1;
+  text-align:right;
+}
+
+.slideshow__hud__link {
+  background-color: lightgreen;
+  text-decoration: none;
+  color:white;
+  padding:5px;
+  border-radius:5px;
+  font-size:0.8em;
+  transition: 0.5s background-color;
+}
+
+.slideshow__hud__link:hover {
+  background-color: darkgreen;
+}
+.slideshow__hud__link--hidden {
+  visibility:hidden;
+}

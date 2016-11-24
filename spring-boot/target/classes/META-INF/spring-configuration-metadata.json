@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "datasource.sakila",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.aiconoa.sakila.config.SakilaConfig",
+      "sourceMethod": "public javax.sql.DataSource sakilaDataSource() "
+    },
+    {
+      "name": "datasource.slideshow",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.aiconoa.slideshow.config.SlideshowConfig",
+      "sourceMethod": "public javax.sql.DataSource primaryDataSource() "
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
